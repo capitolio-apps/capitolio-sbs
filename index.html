@@ -23,8 +23,6 @@
         .logo-placeholder {
             width: 100px;
             height: 100px;
-            background-color: #6CB85E;
-            border-radius: 50%;
             margin: 0 auto 20px;
         }
 
@@ -36,6 +34,29 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            text-align: left;
+        }
+
+        .feature {
+            padding: 20px;
+            background-color: #F4F4F4;
+            border: 1px solid #E0E0E0;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #E0E0E0;
+            margin-bottom: 10px;
         }
 
         .highlight {
@@ -61,18 +82,35 @@
 </head>
 <body>
     <header>
-        <div class="logo-placeholder"></div>
+        <img src="public/logo.png" alt="Capitolio Apps Logo" class="logo-placeholder">
         <h1>Capitolio Apps</h1>
     </header>
 
     <main>
         <div class="content">
             <p><strong>Location:</strong> Heidelberg, Germany</p>
-            <p>
-                <strong>About Us:</strong> The company's main activity is the development of customized micro-SaaS platforms for various industries and target groups, leveraging autonomous AI systems to drive innovation. Our approach includes identifying needs, designing user-friendly interfaces, and integrating data analysis to continuously improve our platforms. By doing so, we aim to simplify complex tasks and provide personalized support to end-users, empowering them to achieve their goals more efficiently and effectively.
-            </p>
-            <p>Contact us to learn how we can help you achieve your goals with innovative, customized solutions.</p>
-            <a href="#">Get in Touch</a>
+            <div class="features">
+                <div class="feature">
+                    <img src="placeholder1.png" alt="Feature 1">
+                    <h3>Customized Micro-SaaS Platforms</h3>
+                    <p>We design and develop tailored micro-SaaS solutions to meet specific industry needs.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder2.png" alt="Feature 2">
+                    <h3>AI-Driven Innovation</h3>
+                    <p>Leveraging autonomous AI systems to simplify tasks and enhance user experiences.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder3.png" alt="Feature 3">
+                    <h3>Data-Driven Insights</h3>
+                    <p>Integrating analytics to continuously improve platforms and provide actionable insights.</p>
+                </div>
+                <div class="feature">
+                    <img src="placeholder4.png" alt="Feature 4">
+                    <h3>User-Friendly Interfaces</h3>
+                    <p>Creating intuitive designs that empower users to achieve their goals efficiently.</p>
+                </div>
+            </div>
         </div>
     </main>
 
