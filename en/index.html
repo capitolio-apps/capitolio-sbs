@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitolio Apps</title>
     <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("en")) {
+                window.location.href = "/en/index.html";
+            }
+        });
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,12 +21,23 @@
             background-color: #F4F4F4;
             color: #0B4328;
         }
+
         header {
             background-color: #0B4328;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
+        .logo-placeholder {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+
         .content {
             max-width: 800px;
             margin: 40px auto;
@@ -28,12 +47,14 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .features {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             text-align: left;
         }
+
         .feature {
             padding: 20px;
             background-color: #F4F4F4;
@@ -41,11 +62,33 @@
             border-radius: 10px;
             text-align: center;
         }
+
+        .feature img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            background-color: #E0E0E0;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #FF4E00;
+        }
+
         footer {
             text-align: center;
             padding: 20px;
             background-color: #88C562;
             color: white;
+        }
+
+        a {
+            color: #FF4E00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -61,18 +104,22 @@
             <p>We design and develop tailored micro-SaaS solutions to meet specific industry needs.</p>
             <div class="features">
                 <div class="feature">
+                    <img src="public/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="Bild für maßgeschneiderte Micro-SaaS-Plattformen">
                     <h3>Customized Micro-SaaS Platforms</h3>
                     <p>We design and develop tailored micro-SaaS solutions for businesses.</p>
                 </div>
                 <div class="feature">
+                    <img src="public/fabio-oyXis2kALVg-unsplash.jpg" alt="Bild für KI-gesteuerte Innovation">
                     <h3>AI-Driven Innovation</h3>
                     <p>Leveraging AI to simplify tasks and enhance user experiences.</p>
                 </div>
                 <div class="feature">
+                    <img src="public/adam-nowakowski-D4LDw5eXhgg-unsplash.jpg" alt="Bild für datengestützte Einblicke">
                     <h3>Data-Driven Insights</h3>
                     <p>Integrating analytics to provide continuous improvement and insights.</p>
                 </div>
                 <div class="feature">
+                    <img src="public/eftakher-alam-i1VQZsU86ok-unsplash.jpg" alt="Bild für benutzerfreundliche Oberflächen">
                     <h3>User-Friendly Interfaces</h3>
                     <p>Creating intuitive designs that empower users to achieve their goals.</p>
                 </div>
