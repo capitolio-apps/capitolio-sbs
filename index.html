@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitolio Apps</title>
     <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith("en")) {
+                window.location.href = "/en/index.html";
+            }
+        });
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -94,32 +102,32 @@
         <div class="content">
             <div class="features">
                 <div class="feature">
-                    <img src="public/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="Image illustrating Customized Micro-SaaS Platforms. Photo by Joanna Kosinska on Unsplash">
-                    <h3>Customized Micro-SaaS Platforms</h3>
-                    <p>We design and develop tailored micro-SaaS solutions to meet specific industry needs.</p>
+                    <img src="public/joanna-kosinska-1_CMoFsPfso-unsplash.jpg" alt="Bild für maßgeschneiderte Micro-SaaS-Plattformen">
+                    <h3>Maßgeschneiderte Micro-SaaS-Plattformen</h3>
+                    <p>Wir entwickeln maßgeschneiderte Micro-SaaS-Lösungen für spezifische Branchenanforderungen.</p>
                 </div>
                 <div class="feature">
-                    <img src="public/fabio-oyXis2kALVg-unsplash.jpg" alt="Image showcasing AI-Driven Innovation. Photo by fabio on Unsplash">
-                    <h3>AI-Driven Innovation</h3>
-                    <p>Leveraging autonomous AI systems to simplify tasks and enhance user experiences.</p>
+                    <img src="public/fabio-oyXis2kALVg-unsplash.jpg" alt="Bild für KI-gesteuerte Innovation">
+                    <h3>KI-gesteuerte Innovation</h3>
+                    <p>Wir nutzen autonome KI-Systeme, um Prozesse zu vereinfachen und Benutzererfahrungen zu verbessern.</p>
                 </div>
                 <div class="feature">
-                    <img src="public/adam-nowakowski-D4LDw5eXhgg-unsplash.jpg" alt="Image representing Data-Driven Insights. Photo by Adam Nowakowski on Unsplash">
-                    <h3>Data-Driven Insights</h3>
-                    <p>Integrating analytics to continuously improve platforms and provide actionable insights.</p>
+                    <img src="public/adam-nowakowski-D4LDw5eXhgg-unsplash.jpg" alt="Bild für datengestützte Einblicke">
+                    <h3>Datengestützte Einblicke</h3>
+                    <p>Wir integrieren Analysen, um Plattformen kontinuierlich zu verbessern und wertvolle Einblicke zu liefern.</p>
                 </div>
                 <div class="feature">
-                    <img src="public/eftakher-alam-i1VQZsU86ok-unsplash.jpg" alt="Image symbolizing User-Friendly Interfaces. Photo by Eftakher Alam on Unsplash">
-                    <h3>User-Friendly Interfaces</h3>
-                    <p>Creating intuitive designs that empower users to achieve their goals efficiently.</p>
+                    <img src="public/eftakher-alam-i1VQZsU86ok-unsplash.jpg" alt="Bild für benutzerfreundliche Oberflächen">
+                    <h3>Benutzerfreundliche Oberflächen</h3>
+                    <p>Intuitive Designs, die es den Nutzern ermöglichen, ihre Ziele effizient zu erreichen.</p>
                 </div>
             </div>
         </div>
     </main>
 
     <footer>
-        &copy; 2025 Capitolio Apps. All rights reserved.<br>
-        Company Details: Capitolio Apps, Inh. Daniel de Moura Prudente. Galileistr. 7, 69115 Heidelberg, Germany. E-mail: capitolio@capitolio.sbs
+        &copy; 2025 Capitolio Apps. Alle Rechte vorbehalten.<br>
+        Firmendetails: Capitolio Apps, Inh. Daniel de Moura Prudente. Galileistr. 7, 69115 Heidelberg, Deutschland. E-Mail: capitolio@capitolio.sbs
     </footer>
 </body>
 </html>
