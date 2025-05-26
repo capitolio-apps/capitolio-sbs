@@ -7,9 +7,14 @@
     <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Only redirect if we're on the wrong language version
             const userLang = navigator.language || navigator.userLanguage;
-            if (userLang.startsWith("en")) {
+            const currentLang = document.documentElement.lang;
+            
+            if (userLang.startsWith("en") && currentLang !== "en") {
                 window.location.href = "/en/index.html";
+            } else if (!userLang.startsWith("en") && currentLang === "en") {
+                window.location.href = "/index.html";
             }
         });
     </script>
