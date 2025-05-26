@@ -6,20 +6,10 @@
     <title>Capitolio Apps</title>
     <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Check URL parameters first
-            const urlParams = new URLSearchParams(window.location.search);
-            const langParam = urlParams.get('lang');
-            
-            if (langParam === 'en') return;
-            if (langParam === 'de') return;
-            
-            // Only auto-redirect if no lang parameter exists
-            const userLang = navigator.language || navigator.userLanguage;
-            if (userLang.startsWith("en") && document.documentElement.lang !== "en") {
-                window.location.href = "/en/index.html";
-            }
-        });
+        function switchToEnglish() {
+            document.cookie = "userLang=en; path=/; max-age=31536000";
+            window.location.href = "/en/index.html";
+        }
     </script>
     <style>
         body {
