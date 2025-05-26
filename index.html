@@ -7,16 +7,23 @@
     <link rel="icon" href="public/favicon.ico" type="image/x-icon">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Only redirect if we're on the wrong language version
-            const userLang = navigator.language || navigator.userLanguage;
-            const currentLang = document.documentElement.lang;
+            // Check if user has manually selected a language
+            const manualLangSelection = localStorage.getItem('manualLangSelection');
             
-            if (userLang.startsWith("en") && currentLang !== "en") {
-                window.location.href = "/en/index.html";
-            } else if (!userLang.startsWith("en") && currentLang === "en") {
-                window.location.href = "/index.html";
+            // Only auto-redirect if no manual selection exists
+            if (!manualLangSelection) {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (userLang.startsWith("en")) {
+                    window.location.href = "/en/index.html";
+                }
             }
         });
+        
+        // Function to handle manual language switch
+        function switchToEnglish() {
+            localStorage.setItem('manualLangSelection', 'en');
+            window.location.href = "/en/index.html";
+        }
     </script>
     <style>
         body {
@@ -143,8 +150,7 @@
                 <h3>Barrierefreiheitserklärung</h3>
                 <p>Wir bemühen uns, unsere Website für alle Nutzer barrierefrei zu gestalten. Sollten Sie auf Probleme stoßen, kontaktieren Sie uns bitte unter <a href="mailto:capitolio@capitolio.sbs">capitolio@capitolio.sbs</a>.</p>
             </div>
-            
-            <p><a href="/en/index.html">Switch to English</a></p>
+            <p><a href="#" onclick="switchToEnglish(); return false;">Switch to English</a></p>
         </div>
     </main>
 
