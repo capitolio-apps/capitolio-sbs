@@ -7,16 +7,23 @@
     <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Only redirect if we're on the wrong language version
-            const userLang = navigator.language || navigator.userLanguage;
-            const currentLang = document.documentElement.lang;
+            // Check if user has manually selected a language
+            const manualLangSelection = localStorage.getItem('manualLangSelection');
             
-            if (userLang.startsWith("en") && currentLang !== "en") {
-                window.location.href = "/en/index.html";
-            } else if (!userLang.startsWith("en") && currentLang === "en") {
-                window.location.href = "/index.html";
+            // Only auto-redirect if no manual selection exists
+            if (!manualLangSelection) {
+                const userLang = navigator.language || navigator.userLanguage;
+                if (!userLang.startsWith("en")) {
+                    window.location.href = "/index.html";
+                }
             }
         });
+        
+        // Function to handle manual language switch
+        function switchToGerman() {
+            localStorage.setItem('manualLangSelection', 'de');
+            window.location.href = "/index.html";
+        }
     </script>
     <style>
         body {
@@ -144,7 +151,7 @@
                 <h3>Accessibility Statement</h3>
                 <p>We strive to make our website accessible to all users. If you encounter any issues, please contact us at <a href="mailto:capitolio@capitolio.sbs">capitolio@capitolio.sbs</a>.</p>
             </div>
-            <p><a href="/index.html">Zur deutschen Seite</a></p>
+            <p><a href="#" onclick="switchToGerman(); return false;">Zur deutschen Seite</a></p>
         </div>
     </main>
 
