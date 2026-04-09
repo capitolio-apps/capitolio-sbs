@@ -14,8 +14,7 @@ const i18n = (function() {
     en: {
       // Navigation
       nav_home: 'Home',
-      nav_privacy: 'Privacy',
-      nav_accessibility: 'Accessibility',
+      nav_privacy_accessibility: 'Privacy & Accessibility',
       nav_index: 'Index',
 
       // CTA Section
@@ -59,8 +58,7 @@ const i18n = (function() {
     de: {
       // Navigation
       nav_home: 'Startseite',
-      nav_privacy: 'Datenschutz',
-      nav_accessibility: 'Barrierefreiheit',
+      nav_privacy_accessibility: 'Datenschutz & Barrierefreiheit',
       nav_index: 'Index',
 
       // CTA Section
