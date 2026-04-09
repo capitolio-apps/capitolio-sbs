@@ -1,150 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolio Apps</title>
-    <link rel="icon" href="../public/favicon.ico" type="image/x-icon">
-    <script>
-        function switchToGerman() {
-            document.cookie = "userLang=de; path=/; max-age=31536000"; // 1 year expiration
-            window.location.href = "/index.html";
-        }
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #F4F4F4;
-            color: #0B4328;
-        }
-
-        header {
-            background-color: #0B4328;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .logo-placeholder {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            object-fit: cover;
-            overflow: hidden;
-        }
-
-        .content {
-            max-width: 800px;
-            margin: 40px auto;
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            text-align: left;
-        }
-
-        .feature {
-            padding: 20px;
-            background-color: #F4F4F4;
-            border: 1px solid #E0E0E0;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .feature img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-            background-color: #E0E0E0;
-            margin-bottom: 10px;
-        }
-
-        .highlight {
-            color: #FF4E00;
-        }
-
-        .legal {
-            margin-top: 40px;
-            padding: 10px;
-            background-color: #fcfcfc;
-            border-radius: 10px;
-            text-align: left;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #88C562;
-            color: white;
-        }
-
-        a {
-            color: #FF4E00;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitolio - Operational Excellence for Growing Teams</title>
+  <meta name="description" content="I help operations leaders eliminate chaos and build scalable systems.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <img src="../public/logo.png" alt="Capitolio Apps Logo" class="logo-placeholder">
-        <h1>Capitolio Apps</h1>
-    </header>
-
-    <main>
-        <div class="content">
-            <h2>Welcome to Capitolio Apps</h2>
-            <p>We design and develop tailored micro-SaaS solutions to meet specific industry needs.</p>
-            <div class="features">
-                <div class="feature">
-                    <img src="https://cdn.jsdelivr.net/gh/capitolio-sbs/capitolio-sbs@main/public/joanna-kosinska-1_CMoFsPfso-unsplash50.webp" alt="Bild für maßgeschneiderte Micro-SaaS-Plattformen" loading="lazy">
-                    <h3>Customized Micro-SaaS Platforms</h3>
-                    <p>We design and develop tailored micro-SaaS solutions for businesses.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://cdn.jsdelivr.net/gh/capitolio-sbs/capitolio-sbs@main/public/fabio-oyXis2kALVg-unsplash.webp" alt="Bild für KI-gesteuerte Innovation" loading="lazy">
-                    <h3>AI-Driven Innovation</h3>
-                    <p>Leveraging AI to simplify tasks and enhance user experiences.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://cdn.jsdelivr.net/gh/capitolio-sbs/capitolio-sbs@main/public/adam-nowakowski-D4LDw5eXhgg-unsplash50.webp" alt="Bild für datengestützte Einblicke" loading="lazy">
-                    <h3>Data-Driven Insights</h3>
-                    <p>Integrating analytics to provide continuous improvement and insights.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://cdn.jsdelivr.net/gh/capitolio-sbs/capitolio-sbs@main/public/eftakher-alam-i1VQZsU86ok-unsplash50.webp" alt="Bild für benutzerfreundliche Oberflächen" loading="lazy">
-                    <h3>User-Friendly Interfaces</h3>
-                    <p>Creating intuitive designs that empower users to achieve their goals.</p>
-                </div>
-            </div>
-            <div class="legal">
-                <h3>Privacy Policy</h3>
-                <p>This website does not collect, store, or process any personal data. We do not use cookies or any tracking technologies. If you have any questions about data privacy, please contact us at <a href="mailto:capitolio@capitolio.sbs">capitolio@capitolio.sbs</a> kontaktieren.</p>
-                
-                <h3>Accessibility Statement</h3>
-                <p>We strive to make our website accessible to all users. If you encounter any issues, please contact us at <a href="mailto:capitolio@capitolio.sbs">capitolio@capitolio.sbs</a>.</p>
-            </div>
-            <p><a href="#" onclick="switchToGerman(); return false;">Zur deutschen Seite</a></p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Capitolio</a>
+        <nav class="nav-desktop">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+            <li><a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Privacy</a></li>
+            <li><a href="accessibility.html" class="nav-link" data-i18n="nav_accessibility">Accessibility</a></li>
+          </ul>
+        </nav>
+        <div class="nav-controls">
+          <button id="theme-toggle" class="nav-btn" aria-label="Toggle theme" title="Toggle theme">
+            <span class="theme-icon">&#9788;</span>
+          </button>
+          <button id="lang-toggle" class="nav-btn" aria-label="Toggle language" title="Toggle language">
+            <span data-lang-indicator>EN</span>
+          </button>
+          <button id="open-nav" class="nav-btn nav-hamburger" aria-label="Open navigation">
+            <span>&#9776;</span>
+          </button>
         </div>
-    </main>
+      </div>
+    </div>
+  </header>
 
-    <footer>
-        &copy; 2025 Capitolio Apps. All rights reserved.<br>
-        Company Details: Capitolio Apps, Inh. Daniel de Moura Prudente. Galileistr. 7, 69115 Heidelberg, Germany. E-Mail: <a href="mailto:capitolio@capitolio.sbs">capitolio@capitolio.sbs</a>
-        VAT Number: DE451928144
-    </footer>
+  <!-- Mobile Navigation Overlay -->
+  <div class="nav-overlay" id="nav-overlay">
+    <button class="close-nav" id="close-nav" aria-label="Close navigation">Close</button>
+    <ul class="nav-overlay-list">
+      <li class="nav-overlay-item"><a href="index.html" class="nav-overlay-link" data-i18n="nav_home">Home</a></li>
+      <li class="nav-overlay-item"><a href="privacy.html" class="nav-overlay-link" data-i18n="nav_privacy">Privacy</a></li>
+      <li class="nav-overlay-item"><a href="accessibility.html" class="nav-overlay-link" data-i18n="nav_accessibility">Accessibility</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Section 1: CTA (Call to Action) -->
+    <section id="cta" class="grid">
+      <div class="cta-content reveal active">
+        <h1 class="cta-title">Operational Excellence for Growing Teams</h1>
+        <p class="cta-subtitle">I help operations leaders eliminate chaos and build scalable systems.</p>
+        <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Call</a>
+      </div>
+    </section>
+
+    <!-- Section 2: Proof of Work (3 Cards) -->
+    <section id="proof" class="grid">
+      <div class="section-label reveal">
+        <span class="label">Proven Results</span>
+      </div>
+      <div class="section-content">
+        <div class="proof-grid">
+          <div class="proof-card reveal">
+            <h3 class="proof-card-title">Scaled Operations</h3>
+            <p class="proof-card-desc">Scaled operational systems from 10 to 100+ employees. Processes documented, automated, and designed for scalability.</p>
+          </div>
+          <div class="proof-card reveal delay-1">
+            <h3 class="proof-card-title">Cost Reduction</h3>
+            <p class="proof-card-desc">Reduced operating costs by 30% through process optimization and automation of redundant workflows.</p>
+          </div>
+          <div class="proof-card reveal delay-2">
+            <h3 class="proof-card-title">Team Development</h3>
+            <p class="proof-card-desc">Built high-performance teams. Established clear roles, responsibilities, and communication structures.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Pricing -->
+    <section id="pricing" class="grid">
+      <div class="section-label reveal">
+        <span class="label">Transparent Pricing</span>
+      </div>
+      <div class="section-content">
+        <div class="pricing-grid">
+          <div class="pricing-card reveal">
+            <span class="pricing-card-title">Monthly Retainer</span>
+            <div class="pricing-card-price">€3,600/month</div>
+            <p class="pricing-card-desc">Fractional Operations Leadership. Continuous operational support and strategic consulting.</p>
+            <a href="https://calendly.com/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Get Started</a>
+          </div>
+          <div class="pricing-card reveal delay-1">
+            <span class="pricing-card-title">Project-Based</span>
+            <div class="pricing-card-price">Upon Request</div>
+            <p class="pricing-card-desc">Project-based consulting available. Process optimization, system building, or team development as individual projects.</p>
+            <a href="mailto:capitolio@capitolio.sbs" class="btn btn-secondary">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-impressum">
+          <p class="footer-impressum-text">
+            <strong>Company:</strong> Capitolio Apps<br>
+            <strong>Owner:</strong> Daniel de Moura Prudente<br>
+            <strong>Address:</strong> Galileistr. 7, 69115 Heidelberg, Germany<br>
+            <strong>Email:</strong> capitolio@capitolio.sbs<br>
+            <strong>VAT:</strong> DE451928144
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="accessibility.html" class="footer-link">Accessibility</a>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2026 Capitolio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
