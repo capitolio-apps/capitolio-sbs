@@ -219,6 +219,8 @@ header {
 /* Section labels */
 .section-label {
   grid-column: 1 / -1;
+  padding-left: var(--baseline-4x);
+  padding-right: var(--baseline-4x);
 }
 
 @media (min-width: var(--breakpoint-md)) {
@@ -260,12 +262,23 @@ header {
   margin-bottom: var(--baseline-4x);
 }
 
+.cta-content > * {
+  padding-left: var(--baseline-4x);
+  padding-right: var(--baseline-4x);
+}
+
+#cta .btn {
+  margin-left: var(--baseline-4x);
+}
+
 /* Proof of Work Section */
 .proof-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--baseline-4x);
   margin-top: var(--baseline-8x);
+  padding-left: var(--baseline-4x);
+  padding-right: var(--baseline-4x);
 }
 
 @media (min-width: var(--breakpoint-md)) {
@@ -397,6 +410,8 @@ footer {
 .legal-content {
   grid-column: 1 / -1;
   max-width: 65ch;
+  padding-left: var(--baseline-4x);
+  padding-right: var(--baseline-4x);
 }
 
 @media (min-width: var(--breakpoint-md)) {
