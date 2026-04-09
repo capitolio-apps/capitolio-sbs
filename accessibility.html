@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barrierefreiheit - Capitolio</title>
+  <meta name="description" content="Barrierefreiheitserklärung der Capitolio Website.">
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <a href="index.html" class="logo">Capitolio</a>
+        <nav class="nav-desktop">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link" data-i18n="nav_home">Startseite</a></li>
+            <li><a href="privacy.html" class="nav-link" data-i18n="nav_privacy">Datenschutz</a></li>
+            <li><a href="accessibility.html" class="nav-link" data-i18n="nav_accessibility">Barrierefreiheit</a></li>
+          </ul>
+        </nav>
+        <div class="nav-controls">
+          <button id="theme-toggle" class="nav-btn" aria-label="Design wechseln" title="Design wechseln">
+            <span class="theme-icon">&#9788;</span>
+          </button>
+          <button id="lang-toggle" class="nav-btn" aria-label="Sprache wechseln" title="Sprache wechseln">
+            <span data-lang-indicator>DE</span>
+          </button>
+          <button id="open-nav" class="nav-btn nav-hamburger" aria-label="Navigation öffnen">
+            <span>&#9776;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="nav-overlay" id="nav-overlay">
+    <button class="close-nav" id="close-nav" aria-label="Navigation schließen">Schließen</button>
+    <ul class="nav-overlay-list">
+      <li class="nav-overlay-item"><a href="index.html" class="nav-overlay-link" data-i18n="nav_home">Startseite</a></li>
+      <li class="nav-overlay-item"><a href="privacy.html" class="nav-overlay-link" data-i18n="nav_privacy">Datenschutz</a></li>
+      <li class="nav-overlay-item"><a href="accessibility.html" class="nav-overlay-link" data-i18n="nav_accessibility">Barrierefreiheit</a></li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Legal Content Section -->
+    <section id="legal" class="grid">
+      <div class="legal-content reveal active">
+        <h1 class="legal-title">Barrierefreiheitserklärung</h1>
+        <div class="legal-section">
+          <p>Wir bemühen uns, unsere Website für alle Nutzer barrierefrei zu gestalten. Sollten Sie auf Probleme stoßen, kontaktieren Sie uns bitte unter capitolio@capitolio.sbs.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-impressum">
+          <p class="footer-impressum-text">
+            <strong>Company:</strong> Capitolio Apps<br>
+            <strong>Owner:</strong> Daniel de Moura Prudente<br>
+            <strong>Address:</strong> Galileistr. 7, 69115 Heidelberg, Germany<br>
+            <strong>Email:</strong> capitolio@capitolio.sbs<br>
+            <strong>VAT:</strong> DE451928144
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="privacy.html" class="footer-link">Datenschutzerklärung</a>
+          <a href="accessibility.html" class="footer-link">Barrierefreiheit</a>
+        </div>
+        <div class="footer-legal">
+          <p>&copy; 2026 Capitolio. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/theme.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
