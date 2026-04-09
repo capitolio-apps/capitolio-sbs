@@ -1,0 +1,467 @@
+/*
+ * Capitolio Main Stylesheet
+ * John Pawson minimalist aesthetic - whitespace over borders
+ * Monochromatic palette, responsive layout
+ */
+
+/* Import design system */
+@import url('./design-system.css');
+
+/* ================================
+ * 1. TYPOGRAPHY
+ * ================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-light);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+}
+
+p {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.label {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: var(--baseline-2x);
+}
+
+/* ================================
+ * 2. LAYOUT
+ * ================================ */
+
+section {
+  padding: var(--baseline-12x) 0;
+  min-height: 50vh;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  section {
+    padding: var(--baseline-15x) 0;
+  }
+}
+
+/* ================================
+ * 3. HEADER & NAVIGATION
+ * ================================ */
+
+header {
+  padding: var(--baseline-4x) 0;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-primary);
+  z-index: 100;
+  transition: background-color var(--transition-base);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing-wide);
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--baseline-2x);
+}
+
+.nav-btn {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  padding: var(--baseline-half) var(--baseline);
+  transition: color var(--transition-base);
+}
+
+.nav-btn:hover {
+  color: var(--text-primary);
+}
+
+/* ================================
+ * 4. HERO SECTION
+ * ================================ */
+
+#hero {
+  padding-top: var(--baseline-8x);
+  padding-bottom: var(--baseline-15x);
+}
+
+.hero-title {
+  grid-column: 1 / -1;
+  margin-bottom: var(--baseline-5x);
+}
+
+.hero-subtitle {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .hero-subtitle {
+    grid-column: 5 / 13;
+  }
+}
+
+/* ================================
+ * 5. BUTTONS
+ * ================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--baseline-2x) var(--baseline-4x);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-base);
+}
+
+.btn-primary {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-medium);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-secondary);
+}
+
+/* ================================
+ * 6. SECTIONS
+ * ================================ */
+
+/* Section labels */
+.section-label {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .section-label {
+    grid-column: 1 / 4;
+  }
+}
+
+.section-content {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .section-content {
+    grid-column: 4 / 13;
+  }
+}
+
+/* CTA Section */
+#cta {
+  background-color: var(--bg-secondary);
+}
+
+.cta-content {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .cta-content {
+    grid-column: 4 / 13;
+  }
+}
+
+.cta-title {
+  margin-bottom: var(--baseline-3x);
+}
+
+.cta-subtitle {
+  margin-bottom: var(--baseline-4x);
+}
+
+/* Proof of Work Section */
+.proof-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--baseline-4x);
+  margin-top: var(--baseline-8x);
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .proof-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.proof-card {
+  padding: var(--baseline-4x) 0;
+}
+
+.proof-card-title {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: var(--baseline-2x);
+}
+
+.proof-card-desc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* Pricing Section */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--baseline-3x);
+  margin-top: var(--baseline-6x);
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--baseline-4x);
+  }
+}
+
+.pricing-card {
+  padding: var(--baseline-4x);
+  background-color: var(--bg-secondary);
+}
+
+.pricing-card-title {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wider);
+  color: var(--text-muted);
+  margin-bottom: var(--baseline);
+}
+
+.pricing-card-price {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  margin-bottom: var(--baseline-2x);
+}
+
+.pricing-card-desc {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--baseline-3x);
+}
+
+/* ================================
+ * 7. FOOTER
+ * ================================ */
+
+footer {
+  padding: var(--baseline-10x) 0;
+  border-top: 1px solid var(--border-light);
+}
+
+.footer-content {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--baseline-3x);
+  margin-top: var(--baseline-4x);
+}
+
+.footer-link {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  transition: color var(--transition-base);
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+}
+
+.footer-legal {
+  margin-top: var(--baseline-4x);
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+/* ================================
+ * 8. LEGAL PAGES
+ * ================================ */
+
+.legal-content {
+  grid-column: 1 / -1;
+  max-width: 65ch;
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .legal-content {
+    grid-column: 4 / 12;
+  }
+}
+
+.legal-title {
+  margin-bottom: var(--baseline-4x);
+}
+
+.legal-section {
+  margin-bottom: var(--baseline-6x);
+}
+
+.legal-section h2 {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--baseline-2x);
+}
+
+.legal-section p {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+}
+
+/* ================================
+ * 9. NAVIGATION OVERLAY
+ * ================================ */
+
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-slow);
+}
+
+.nav-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-overlay-list {
+  text-align: center;
+}
+
+.nav-overlay-item {
+  margin: var(--baseline-3x) 0;
+}
+
+.nav-overlay-link {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-light);
+  color: var(--text-primary);
+  transition: color var(--transition-base);
+}
+
+.nav-overlay-link:hover {
+  color: var(--text-secondary);
+}
+
+.close-nav {
+  position: absolute;
+  top: var(--baseline-4x);
+  right: var(--container-padding);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+/* ================================
+ * 10. ANIMATIONS
+ * ================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(var(--baseline-3x));
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  will-change: opacity, transform;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* ================================
+ * 11. PRINT STYLES
+ * ================================ */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  .nav-overlay,
+  .nav-controls,
+  .btn {
+    display: none !important;
+  }
+
+  section {
+    padding: 2rem 0;
+    min-height: auto;
+    page-break-inside: avoid;
+  }
+
+  footer {
+    padding: 1rem 0;
+    page-break-before: avoid;
+  }
+}
