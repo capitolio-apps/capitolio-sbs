@@ -34,7 +34,7 @@
 
 **Plans:** 4 plans
 
-- [ ] 01-foundation-PLAN.md — Design system CSS and JS utilities (theming, i18n)
+- [x] 01-foundation-PLAN.md — Design system CSS and JS utilities (theming, i18n)
 - [ ] 02-content-PLAN.md — Landing pages with CTA, Proof of Work, Pricing sections
 - [ ] 03-legal-PLAN.md — Privacy Policy and Accessibility Statement pages
 - [ ] 04-security-PLAN.md — Security audit of the complete website
@@ -45,7 +45,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Complete Website | 0/4 | Not started | - |
+| 1. Complete Website | 1/4 | In progress | 2026-04-09 |
 
 ---
 
