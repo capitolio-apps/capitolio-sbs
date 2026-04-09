@@ -23,6 +23,7 @@ Get qualified leads to book a meeting in under 60 seconds — if they need opera
 - [ ] Privacy Policy (Datenschutzerklärung) preserved from legacy
 - [ ] Accessibility Statement preserved from legacy
 - [ ] Impressum in global footer preserved from legacy
+- [ ] Security audit of complete website (no XSS, no sensitive data exposure)
 
 ### Out of Scope
 
