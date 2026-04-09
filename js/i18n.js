@@ -170,6 +170,33 @@ const i18n = (function() {
   function toggleLanguage() {
     const newLang = currentLang === 'en' ? 'de' : 'en';
     setLanguage(newLang);
+    
+    const currentPath = window.location.pathname;
+    let newPath;
+    
+    if (newLang === 'en') {
+      if (currentPath.startsWith('/en/')) {
+        newPath = currentPath.replace('/en/', '/');
+      } else if (currentPath === '/en' || currentPath === '/en/') {
+        newPath = '/';
+      } else if (currentPath === '/' || currentPath === '') {
+        newPath = '/en/';
+      } else {
+        newPath = '/en/' + currentPath.split('/').filter(Boolean).join('/');
+      }
+    } else {
+      if (currentPath.startsWith('/en/')) {
+        newPath = currentPath.replace('/en/', '/');
+      } else if (currentPath === '/en' || currentPath === '/en/') {
+        newPath = '/';
+      } else if (currentPath === '/' || currentPath === '') {
+        newPath = '/';
+      } else {
+        newPath = currentPath;
+      }
+    }
+    
+    window.location.href = newPath;
   }
 
   /**
