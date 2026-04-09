@@ -7,45 +7,45 @@
 
 ### Core Layout & Design
 
-- [ ] **DESN-01**: Landing page follows John Pawson minimalist design philosophy (whitespace over borders, monochromatic palette)
-- [ ] **DESN-02**: Light mode with clean, high-contrast typography
-- [ ] **DESN-03**: Dark mode with identical minimalist principles (no flat black, use charcoal/grey tones)
-- [ ] **DESN-04**: Subtle micro-transitions for interactions (no flashy animations)
-- [ ] **DESN-05**: Responsive layout working on mobile, tablet, desktop
+- [x] **DESN-01**: Landing page follows John Pawson minimalist design philosophy (whitespace over borders, monochromatic palette)
+- [x] **DESN-02**: Light mode with clean, high-contrast typography
+- [x] **DESN-03**: Dark mode with identical minimalist principles (no flat black, use charcoal/grey tones)
+- [x] **DESN-04**: Subtle micro-transitions for interactions (no flashy animations)
+- [x] **DESN-05**: Responsive layout working on mobile, tablet, desktop
 
 ### Theming
 
-- [ ] **THEM-01**: Light/Dark mode toggle accessible from header/nav
-- [ ] **THEM-02**: Theme preference persists across sessions (localStorage)
-- [ ] **THEM-03**: Toggle animation is subtle and smooth
+- [x] **THEM-01**: Light/Dark mode toggle accessible from header/nav
+- [x] **THEM-02**: Theme preference persists across sessions (localStorage)
+- [x] **THEM-03**: Toggle animation is subtle and smooth
 
 ### Internationalization
 
-- [ ] **I18N-01**: English version as default
-- [ ] **I18N-02**: German version (Deutsch)
-- [ ] **I18N-03**: Language toggle accessible from header
-- [ ] **I18N-04**: Language preference persists across sessions
-- [ ] **I18N-05**: All visible text is translated (no untranslated strings)
+- [x] **I18N-01**: English version as default
+- [x] **I18N-02**: German version (Deutsch)
+- [x] **I18N-03**: Language toggle accessible from header
+- [x] **I18N-04**: Language preference persists across sessions
+- [x] **I18N-05**: All visible text is translated (no untranslated strings)
 
 ### Content Sections
 
-- [ ] **CONT-01**: Vision 1 - CTA section with immediate booking path
-- [ ] **CONT-02**: Vision 2 - Proof of Work section with 3 achievement cards
-- [ ] **CONT-03**: Vision 3 - Transparent pricing section (3.600€/month, project-based options)
-- [ ] **CONT-04**: Content follows the linear "Three Visions" structure
+- [x] **CONT-01**: Vision 1 - CTA section with immediate booking path
+- [x] **CONT-02**: Vision 2 - Proof of Work section with 3 achievement cards
+- [x] **CONT-03**: Vision 3 - Transparent pricing section (3.600€/month, project-based options)
+- [x] **CONT-04**: Content follows the linear "Three Visions" structure
 
 ### Legal Pages (Retained from Legacy)
 
-- [ ] **LEGAL-01**: Privacy Policy page with exact text preserved from legacy
-- [ ] **LEGAL-02**: Accessibility Statement page with exact text preserved from legacy
-- [ ] **LEGAL-03**: Impressum in global footer with exact legal data preserved
+- [x] **LEGAL-01**: Privacy Policy page with exact text preserved from legacy
+- [x] **LEGAL-02**: Accessibility Statement page with exact text preserved from legacy
+- [x] **LEGAL-03**: Impressum in global footer with exact legal data preserved
 
 ### Technical
 
-- [ ] **TECH-01**: Vanilla HTML/CSS/JS — no frameworks (React, Vue, etc.)
-- [ ] **TECH-02**: Static site ready for GitHub Pages deployment
-- [ ] **TECH-03**: Semantic HTML structure for accessibility
-- [ ] **TECH-04**: CSS follows design.md philosophy (grid-based, 4px/8px baseline)
+- [x] **TECH-01**: Vanilla HTML/CSS/JS — no frameworks (React, Vue, etc.)
+- [x] **TECH-02**: Static site ready for GitHub Pages deployment
+- [x] **TECH-03**: Semantic HTML structure for accessibility
+- [x] **TECH-04**: CSS follows design.md philosophy (grid-based, 4px/8px baseline)
 
 ## v2 Requirements
 
@@ -65,30 +65,30 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DESN-01 | Phase 1 | Pending |
-| DESN-02 | Phase 1 | Pending |
-| DESN-03 | Phase 1 | Pending |
-| DESN-04 | Phase 1 | Pending |
-| DESN-05 | Phase 1 | Pending |
-| THEM-01 | Phase 1 | Pending |
-| THEM-02 | Phase 1 | Pending |
-| THEM-03 | Phase 1 | Pending |
-| I18N-01 | Phase 1 | Pending |
-| I18N-02 | Phase 1 | Pending |
-| I18N-03 | Phase 1 | Pending |
-| I18N-04 | Phase 1 | Pending |
-| I18N-05 | Phase 1 | Pending |
-| CONT-01 | Phase 1 | Pending |
-| CONT-02 | Phase 1 | Pending |
-| CONT-03 | Phase 1 | Pending |
-| CONT-04 | Phase 1 | Pending |
-| LEGAL-01 | Phase 1 | Pending |
-| LEGAL-02 | Phase 1 | Pending |
-| LEGAL-03 | Phase 1 | Pending |
-| TECH-01 | Phase 1 | Pending |
-| TECH-02 | Phase 1 | Pending |
-| TECH-03 | Phase 1 | Pending |
-| TECH-04 | Phase 1 | Pending |
+| DESN-01 | Phase 1 | Complete |
+| DESN-02 | Phase 1 | Complete |
+| DESN-03 | Phase 1 | Complete |
+| DESN-04 | Phase 1 | Complete |
+| DESN-05 | Phase 1 | Complete |
+| THEM-01 | Phase 1 | Complete |
+| THEM-02 | Phase 1 | Complete |
+| THEM-03 | Phase 1 | Complete |
+| I18N-01 | Phase 1 | Complete |
+| I18N-02 | Phase 1 | Complete |
+| I18N-03 | Phase 1 | Complete |
+| I18N-04 | Phase 1 | Complete |
+| I18N-05 | Phase 1 | Complete |
+| CONT-01 | Phase 1 | Complete |
+| CONT-02 | Phase 1 | Complete |
+| CONT-03 | Phase 1 | Complete |
+| CONT-04 | Phase 1 | Complete |
+| LEGAL-01 | Phase 1 | Complete |
+| LEGAL-02 | Phase 1 | Complete |
+| LEGAL-03 | Phase 1 | Complete |
+| TECH-01 | Phase 1 | Complete |
+| TECH-02 | Phase 1 | Complete |
+| TECH-03 | Phase 1 | Complete |
+| TECH-04 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 24 total
