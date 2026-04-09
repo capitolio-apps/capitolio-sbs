@@ -32,7 +32,11 @@
 6. Site is responsive on mobile, tablet, and desktop with semantic HTML structure
 7. Static site is deployable to GitHub Pages with vanilla HTML/CSS/JS (no frameworks)
 
-**Plans:** TBD
+**Plans:** 3 plans
+
+- [ ] 01-foundation-PLAN.md — Design system CSS and JS utilities (theming, i18n)
+- [ ] 02-content-PLAN.md — Landing pages with CTA, Proof of Work, Pricing sections
+- [ ] 03-legal-PLAN.md — Privacy Policy and Accessibility Statement pages
 
 ---
 
@@ -40,7 +44,7 @@
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Complete Website | 0/1 | Not started | - |
+| 1. Complete Website | 0/3 | Not started | - |
 
 ---
 
