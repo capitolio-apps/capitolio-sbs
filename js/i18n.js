@@ -46,7 +46,7 @@ const i18n = (function() {
       // Legal Pages
       legal_privacy_title: 'Privacy Policy',
       legal_accessibility_title: 'Accessibility Statement',
-      legal_privacy_content: 'This website does not collect, store, or process any personal data. We do not use cookies or any tracking technologies. If you have any questions about data privacy, please contact us at capitolio@capitolio.sbs.',
+      legal_privacy_content: 'This website does not collect, store, or process any personal data. We do not use cookies, tracking technologies, or external services. All resources (fonts, scripts, styles) are served directly from this server. If you have any questions about data privacy, please contact us at capitolio@capitolio.sbs.',
       legal_accessibility_content: 'We strive to make our website accessible to all users. If you encounter any issues, please contact us at capitolio@capitolio.sbs.',
 
       // Accessibility
@@ -90,7 +90,7 @@ const i18n = (function() {
       // Legal Pages
       legal_privacy_title: 'Datenschutzerklärung',
       legal_accessibility_title: 'Barrierefreiheitserklärung',
-      legal_privacy_content: 'Diese Website sammelt, speichert oder verarbeitet keine personenbezogenen Daten. Wir verwenden keine Cookies oder andere Tracking-Technologien. Wenn Sie Fragen zum Datenschutz haben, kontaktieren Sie uns bitte unter capitolio@capitolio.sbs.',
+      legal_privacy_content: 'Diese Website sammelt, speichert oder verarbeitet keine personenbezogenen Daten. Wir verwenden keine Cookies, Tracking-Technologien oder externe Dienste. Alle Ressourcen (Schriftarten, Skripte, Stile) werden direkt von diesem Server ausgeliefert. Wenn Sie Fragen zum Datenschutz haben, kontaktieren Sie uns bitte unter capitolio@capitolio.sbs.',
       legal_accessibility_content: 'Wir bemühen uns, unsere Website für alle Nutzer zugänglich zu machen. Wenn Sie auf Probleme stoßen, kontaktieren Sie uns bitte unter capitolio@capitolio.sbs.',
 
       // Accessibility
@@ -168,33 +168,17 @@ const i18n = (function() {
   function toggleLanguage() {
     const newLang = currentLang === 'en' ? 'de' : 'en';
     setLanguage(newLang);
-    
+
     const currentPath = window.location.pathname;
-    let newPath;
-    
+
     if (newLang === 'en') {
-      if (currentPath.startsWith('/en/')) {
-        newPath = currentPath.replace('/en/', '/');
-      } else if (currentPath === '/en' || currentPath === '/en/') {
-        newPath = '/';
-      } else if (currentPath === '/' || currentPath === '') {
-        newPath = '/en/';
-      } else {
-        newPath = '/en/' + currentPath.split('/').filter(Boolean).join('/');
-      }
+      // Switch to English: prepend /en/ to the current path
+      const stripped = currentPath.replace(/^\//, '');
+      window.location.href = '/en/' + stripped;
     } else {
-      if (currentPath.startsWith('/en/')) {
-        newPath = currentPath.replace('/en/', '/');
-      } else if (currentPath === '/en' || currentPath === '/en/') {
-        newPath = '/';
-      } else if (currentPath === '/' || currentPath === '') {
-        newPath = '/';
-      } else {
-        newPath = currentPath;
-      }
+      // Switch to German: strip the leading /en/ prefix
+      window.location.href = currentPath.replace(/^\/en\//, '/');
     }
-    
-    window.location.href = newPath;
   }
 
   /**
