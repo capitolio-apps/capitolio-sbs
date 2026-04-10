@@ -14,6 +14,8 @@ const i18n = (function() {
     en: {
       // Navigation
       nav_home: 'Home',
+      nav_highlights: 'Highlights',
+      nav_pricing: 'Pricing',
       nav_privacy_accessibility: 'Privacy & Accessibility',
       nav_index: 'Index',
 
@@ -58,6 +60,8 @@ const i18n = (function() {
     de: {
       // Navigation
       nav_home: 'Startseite',
+      nav_highlights: 'Highlights',
+      nav_pricing: 'Preise',
       nav_privacy_accessibility: 'Datenschutz & Barrierefreiheit',
       nav_index: 'Index',
 
