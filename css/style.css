@@ -301,6 +301,13 @@ header {
 .proof-card-desc {
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
+  list-style: disc;
+  padding-left: var(--baseline-2x);
+  margin: 0;
+}
+
+.proof-card-desc li {
+  margin-bottom: var(--baseline);
 }
 
 /* Pricing Section */
