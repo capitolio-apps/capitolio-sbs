@@ -86,14 +86,6 @@ header {
   transform: translateX(-50%);
 }
 
-.logo {
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  color: var(--text-primary);
-  text-decoration: none;
-  letter-spacing: var(--letter-spacing-wide);
-}
-
 .nav-list {
   display: flex;
   gap: var(--baseline-4x);
@@ -261,7 +253,7 @@ header {
 }
 
 .cta-subtitle {
-  margin-bottom: var(--baseline-4x);
+  margin-bottom: var(--baseline-2x);
 }
 
 .cta-content > * {
@@ -269,8 +261,54 @@ header {
   padding-right: var(--baseline-4x);
 }
 
-#cta .btn {
-  margin-left: var(--baseline-4x);
+.eyebrow-text {
+  display: block; 
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: var(--baseline-2x);
+}
+
+.focus-areas {
+  list-style: none;
+  padding: 0 var(--baseline-4x); 
+  margin: 0 0 var(--baseline-5x) 0; /* Added a tiny bit more breathing room above the button */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.focus-areas li {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+}
+
+/* Adds a subtle dot between the items, but NOT after the last one */
+.focus-areas li:not(:last-child)::after {
+  content: "•";
+  margin: 0 var(--baseline-2x); /* 16px of space on both sides of the dot */
+  color: var(--text-secondary);
+  opacity: 0.4; /* Makes the dot fade back so the words stand out */
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column; /* Stack them vertically on mobile */
+  align-items: flex-start;
+  gap: var(--baseline-2x);
+}
+
+@media (min-width: var(--breakpoint-md)) {
+  .cta-actions {
+    flex-direction: row;
+    align-items: center; 
+    gap: var(--baseline-3x);
+  }
 }
 
 /* Proof of Work Section */
